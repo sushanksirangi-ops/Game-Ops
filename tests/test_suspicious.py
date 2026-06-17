@@ -1,5 +1,10 @@
-from app.services.suspicious_service import SuspiciousService
+import sys
+from pathlib import Path
 
+ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT_DIR))
+
+from app.services.suspicious_service import SuspiciousService
 
 class MockMatch:
 
